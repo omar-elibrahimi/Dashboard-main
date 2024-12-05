@@ -79,9 +79,9 @@
 <script>
 import axios from 'axios';
 
-// Create axios instance with base URL
+
 const api = axios.create({
-  baseURL: 'http://localhost:3000' // Replace with your backend URL
+  baseURL: 'http://localhost:3000' 
 });
 
 export default {
@@ -109,7 +109,7 @@ export default {
     async fetchProducts() {
       try {
         this.loading = true;
-        const response = await api.get('/api/products');
+        const response = await api.get('/products');
         this.products = response.data;
         this.error = null;
       } catch (err) {

@@ -20,10 +20,14 @@
     "typescript": "^5.7.2"
   },
   "dependencies": {
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.7",
     "cors": "^2.8.5",
     "express": "^4.21.1",
     "mongoose": "^8.8.3",
     "node-fetch": "^2.7.0",
-    "parser": "^0.1.4"
+    "parser": "^0.1.4",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
   }
 }

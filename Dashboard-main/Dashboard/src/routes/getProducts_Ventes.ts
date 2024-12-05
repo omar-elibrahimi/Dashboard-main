@@ -6,13 +6,11 @@ import { ProductListController } from "../controllers/getProducts_Ventes";
 const router = Router();
 const productListController = new ProductListController();
 
-/**
- * Route pour récupérer les produits avec leurs ventes.
- */
+
 router.get("/products", (req, res) => productListController.getProductsWithSales(req, res));
 router.get("/analytics/trending_products", (req, res) => productListController.getMostSoldProducts(req, res));
 
-router.get(" /analytics/category_sales", (req, res) => 
+router.get("/analytics/category_sales", (req, res) => 
     productListController.getMostSoldCategories(req, res)
   );
 
